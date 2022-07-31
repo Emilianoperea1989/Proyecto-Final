@@ -52,6 +52,7 @@ header nav ul li a {
 }
 
 .banner {
+    
     height: auto;
     word-wrap: break-word;
     background-image: url(img/img-fondo-banner.jpg);
@@ -153,9 +154,31 @@ header nav ul li a {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.619);
     border-radius: 10px;
-    
-    
-    
+       
+}
+
+.contacto{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+   
+    justify-content:space-evenly;
+    margin-top: 25%;
+    flex-wrap: wrap;
+}
+
+.contacto li{
+    list-style: none;
+
+}
+.imgcontacto{
+    width: 150px;
+    height: 150px;
+}
+
+.alineado{
+   margin-top: 15%;
+   height: 100vh;
 }
 
 
@@ -185,7 +208,13 @@ header nav ul li a {
        
     
     }
-
+    .sizeimg{
+        max-width: 300px;
+        padding-top:20px ;
+     
+    }
+ 
+      
     
 .about{
 
@@ -206,6 +235,23 @@ header nav ul li a {
 
 @media screen and (max-width:705px){
     
+    .contacto{
+      
+       
+       
+        margin-top: 70%;
+       
+    }
+
+    .imgcontacto{
+        
+        width: 100px;
+        height: 100px;
+    }
+    
+    .logo{
+        display: none;
+    }
     
     header nav ul li {
         
@@ -266,6 +312,11 @@ header nav ul li a {
         
         font-size:20px;
         
+    }
+    .alineado{
+        margin-top: 70%;
+        max-width: auto
+        ;
     }
     
         
