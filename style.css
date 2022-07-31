@@ -205,21 +205,8 @@ li:hover {
    height: 100vh;
 }
 
-
-
-.pie-pagina {
-   
-    text-align: center;
-    color: rgb(255, 231, 231);
-    font-family: 'Cormorant SC', serif;
-
-}
-
-.pie-pagina h3 {
-    margin: auto;
-    font-weight: 900;
-    letter-spacing: 3px;
-    background-color: black;
+.pie{
+    background-color: rgb(117, 117, 117);
 }
 
 /* -------MediaQuery------ */
@@ -273,7 +260,7 @@ li:hover {
     }
 
     .imgcontacto{
-        margin: 10px;
+        margin: 13px;
         width: 100px;
         height: 100px;
     }
