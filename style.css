@@ -49,8 +49,7 @@ header nav ul li a {
     text-decoration: none;
     color: white;
     margin: 8px;
-    transform: translate(0px, 0px);
-    animation: cssAnimation_0 520ms infinite ease-out;
+ 
 }
 
 a:hover{
@@ -260,16 +259,21 @@ li:hover {
 
 @media screen and (max-width:705px){
     
+
+    li:hover {
+        color: white;
+        
+        animation: none
+        
+      }
     .contacto{
       
-       
-       
         margin-top: 70%;
        
     }
 
     .imgcontacto{
-        
+        margin: 10px;
         width: 100px;
         height: 100px;
     }
