@@ -64,7 +64,7 @@ header {
 
 .banner {
   word-wrap: break-word;
-  background-image: url(/img/img-fondo-banner.jpg);
+  background-image: url(../img/img-fondo-banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -105,7 +105,9 @@ header {
   margin-top: 250px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img6";
+  grid-template-areas: "img1 img2 img3"
+ "img4 img5 img6"
+ "img7 img8 img6";
   gap: 6px; }
   .habilidades div {
     margin: auto;
