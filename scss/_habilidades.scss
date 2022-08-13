@@ -1,0 +1,87 @@
+// mapa
+$breakpoints: (
+    lg:1000px,
+    sm:705px
+);
+
+// mixin
+@mixin mediaquery($breakpoint) {
+    @media screen and (max-width: map-get($breakpoints , $breakpoint)) {
+        @content;
+    }
+}
+
+
+.habilidades {
+    margin-top: 250px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "img1 img2 img3"
+        "img4 img5 img6"
+        "img7 img8 img6";
+    gap: 6px;
+
+    div {
+        margin: auto;
+        text-align: center;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+
+        p {
+            background-color: black;
+            border-radius: 5px;
+
+            @include mediaquery(sm) {
+                font-size: 15px;
+            }
+        }
+    }
+
+    img {
+        height: 160px;
+
+        @include mediaquery(sm) {
+            height: 100px;
+        }
+    }
+
+    @include mediaquery(sm) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+.item1 {
+    grid-area: img1;
+}
+
+.item2 {
+    grid-area: img2;
+}
+
+.item3 {
+    grid-area: img3;
+}
+
+.item4 {
+    grid-area: img4;
+}
+
+.item5 {
+    grid-area: img5;
+}
+
+.item6 {
+    grid-area: img6;
+}
+
+.item7 {
+    grid-area: img7;
+}
+
+.item8 {
+    grid-area: img8;
+
+}

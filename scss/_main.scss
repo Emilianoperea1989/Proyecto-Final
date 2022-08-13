@@ -1,0 +1,57 @@
+// mapa
+$breakpoints: (
+    lg:1000px,
+    sm:705px
+);
+// mixin
+@mixin mediaquery($breakpoint) {
+    @media screen and (max-width: map-get($breakpoints , $breakpoint)) {
+        @content;
+    }
+}
+
+
+.banner {
+    word-wrap: break-word;
+    background-image: url(/img/img-fondo-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  
+    p{
+        margin-top: 10%;
+        color: white;
+        font-size:50px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.619);
+        border-radius: 10px;
+
+        @include mediaquery(lg){
+            margin:15%;
+            padding: 10px;
+            font-size:25px;
+            
+        }
+        @include mediaquery(sm){
+            margin-top: 70%;
+            font-size:20px;
+        }   
+    }   
+    
+}
+#my-name{
+    margin: 12%;
+    font-family: 'Cormorant SC', serif;
+    font-size: 120px;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+ @include mediaquery(sm){
+    margin-top: 100%;
+    font-size: 50px;
+    }
+}

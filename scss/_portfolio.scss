@@ -1,0 +1,30 @@
+// mapa
+$breakpoints: (
+    lg:1000px,
+    sm:705px
+);
+// mixin
+@mixin mediaquery($breakpoint) {
+    @media screen and (max-width: map-get($breakpoints , $breakpoint)) {
+        @content;
+    }
+}
+
+
+
+.sizeimg{
+    @include mediaquery(lg){
+        max-width: 300px;
+        padding-top:20px ;
+    }
+}
+
+.alineado{
+    margin-top: 15%;
+    height: 100vh;
+    
+    @include mediaquery(sm){
+        margin-top: 70%;
+        max-width: auto;
+    }
+ }

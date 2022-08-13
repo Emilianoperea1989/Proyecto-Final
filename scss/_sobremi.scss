@@ -1,0 +1,27 @@
+// mapa
+$breakpoints: (
+    lg:1000px,
+    sm:705px
+);
+// mixin
+@mixin mediaquery($breakpoint) {
+    @media screen and (max-width: map-get($breakpoints , $breakpoint)) {
+        @content;
+    }
+}
+
+
+.about{
+    height: 70vh;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    text-decoration: underline;
+    
+    @include mediaquery(lg){
+        font-size: 35px;
+    }
+    @include mediaquery(sm){
+        font-size: 25px;
+    }
+}

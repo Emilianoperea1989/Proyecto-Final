@@ -1,0 +1,38 @@
+// mapa
+$breakpoints: (
+    lg:1000px,
+    sm:705px
+);
+// mixin
+@mixin mediaquery($breakpoint) {
+    @media screen and (max-width: map-get($breakpoints , $breakpoint)) {
+        @content;
+    }
+}
+
+
+.contacto{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-top: 25%;
+    flex-wrap: wrap;
+    @include mediaquery(sm){
+        margin-top: 70%;
+    }
+    li{
+        list-style: none;
+     
+    }
+}
+.imgcontacto{
+    width: 150px;
+    height: 150px;
+
+    @include mediaquery(sm){
+        margin: 13px;
+        width: 100px;
+        height: 100px;
+    }
+}

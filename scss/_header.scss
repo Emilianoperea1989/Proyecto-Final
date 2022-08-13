@@ -1,0 +1,121 @@
+
+// mapa
+$breakpoints: (
+    lg:1000px,
+    sm:705px
+);
+// mixin
+@mixin mediaquery($breakpoint) {
+    @media screen and (max-width: map-get($breakpoints , $breakpoint)) {
+        @content;
+    }
+}
+
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+
+    nav {
+
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(126, 126, 126, 0.794);
+        align-items: center;
+        padding: 10px;
+
+        @include mediaquery(sm){
+            justify-content: center;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            box-shadow: 6px;
+            @include mediaquery(lg){
+                width: 30px;
+                height: 30px;
+             }
+         }
+        .logo{
+        @include mediaquery(sm){
+            display: none;
+         }
+        }
+
+        ul {
+            display: flex;
+            @include mediaquery(sm){
+                flex-direction: column;
+                align-items: center;
+                padding: 3px;
+                }
+            li {
+                list-style: none;
+                font-size: 30px;
+                padding: 6px;
+
+                @include mediaquery(lg) {
+
+                    font-size: 18px;
+
+                }
+                @include mediaquery(sm) {
+        
+                    padding: 3px;
+                    
+
+                }
+               
+            
+
+                &:hover {
+                    color: white;
+                    transform: translate(0px, 0px);
+                    animation: cssAnimation_0 520ms;
+                    animation-fill-mode: forwards;
+
+                    @include mediaquery(sm) {
+
+                        color: white;
+    
+                        animation: none
+                    }
+    
+
+                }
+
+                @keyframes cssAnimation_0 {
+                    from {
+                        transform: translate(0px, 0px);
+                    }
+
+                    to {
+                        transform: translate(0px, 7px) scale(1.3, 1.3);
+                    }
+                }
+
+
+                a {
+                    font-family: 'Cormorant SC', serif;
+                    text-decoration: none;
+                    color: white;
+                    margin: 8px;
+
+                    &:hover {
+                        color: white;
+
+
+                    }
+
+                }
+
+            }
+        }
+
+
+    }
+
+
+}
