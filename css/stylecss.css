@@ -105,9 +105,7 @@ header {
   margin-top: 250px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "img1 img2 img3"
- "img4 img5 img6"
- "img7 img8 img6";
+  grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img6";
   gap: 6px; }
   .habilidades div {
     margin: auto;
