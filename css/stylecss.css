@@ -8,7 +8,7 @@ header {
     background-color: rgba(126, 126, 126, 0.794);
     align-items: center;
     padding: 10px; }
-    @media screen and (max-width: 705px) {
+    @media screen and (max-width: 765px) {
       header nav {
         justify-content: center; } }
     header nav img {
@@ -19,12 +19,12 @@ header {
         header nav img {
           width: 30px;
           height: 30px; } }
-    @media screen and (max-width: 705px) {
+    @media screen and (max-width: 765px) {
       header nav .logo {
         display: none; } }
     header nav ul {
       display: flex; }
-      @media screen and (max-width: 705px) {
+      @media screen and (max-width: 765px) {
         header nav ul {
           flex-direction: column;
           align-items: center;
@@ -36,7 +36,7 @@ header {
         @media screen and (max-width: 1000px) {
           header nav ul li {
             font-size: 18px; } }
-        @media screen and (max-width: 705px) {
+        @media screen and (max-width: 765px) {
           header nav ul li {
             padding: 3px; } }
         header nav ul li:hover {
@@ -44,7 +44,7 @@ header {
           transform: translate(0px, 0px);
           animation: cssAnimation_0 520ms;
           animation-fill-mode: forwards; }
-          @media screen and (max-width: 705px) {
+          @media screen and (max-width: 765px) {
             header nav ul li:hover {
               color: white;
               animation: none; } }
@@ -61,6 +61,10 @@ header {
           margin: 8px; }
           header nav ul li a:hover {
             color: white; }
+
+@media screen and (max-width: 765px) {
+  .navegador {
+    display: none; } }
 
 .banner {
   word-wrap: break-word;
@@ -84,7 +88,7 @@ header {
         margin: 15%;
         padding: 10px;
         font-size: 25px; } }
-    @media screen and (max-width: 705px) {
+    @media screen and (max-width: 765px) {
       .banner p {
         margin-top: 70%;
         font-size: 20px; } }
@@ -96,7 +100,7 @@ header {
   font-weight: 900;
   color: black;
   text-align: center; }
-  @media screen and (max-width: 705px) {
+  @media screen and (max-width: 765px) {
     #my-name {
       margin-top: 100%;
       font-size: 50px; } }
@@ -115,15 +119,15 @@ header {
     .habilidades div p {
       background-color: black;
       border-radius: 5px; }
-      @media screen and (max-width: 705px) {
+      @media screen and (max-width: 765px) {
         .habilidades div p {
           font-size: 15px; } }
   .habilidades img {
     height: 160px; }
-    @media screen and (max-width: 705px) {
+    @media screen and (max-width: 765px) {
       .habilidades img {
         height: 100px; } }
-  @media screen and (max-width: 705px) {
+  @media screen and (max-width: 765px) {
     .habilidades {
       display: flex;
       flex-wrap: wrap; } }
@@ -160,7 +164,7 @@ header {
 .alineado {
   margin-top: 15%;
   height: 100vh; }
-  @media screen and (max-width: 705px) {
+  @media screen and (max-width: 765px) {
     .alineado {
       margin-top: 70%;
       max-width: auto; } }
@@ -168,7 +172,7 @@ header {
 .container {
   margin-top: 20%;
   padding-left: 40px; }
-  @media screen and (max-width: 705px) {
+  @media screen and (max-width: 765px) {
     .container {
       margin-top: 70%; } }
 
@@ -176,7 +180,7 @@ header {
   padding: 20px;
   width: 150px;
   height: 150px; }
-  @media screen and (max-width: 705px) {
+  @media screen and (max-width: 765px) {
     .imgcontacto {
       width: 100px;
       height: 100px; } }
@@ -196,6 +200,6 @@ header {
   @media screen and (max-width: 1000px) {
     .about {
       font-size: 35px; } }
-  @media screen and (max-width: 705px) {
+  @media screen and (max-width: 765px) {
     .about {
       font-size: 25px; } }
