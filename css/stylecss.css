@@ -165,27 +165,24 @@ header {
       margin-top: 70%;
       max-width: auto; } }
 
-.contacto {
-  height: 70vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 25%;
-  flex-wrap: wrap; }
+.container {
+  margin-top: 20%;
+  padding-left: 40px; }
   @media screen and (max-width: 705px) {
-    .contacto {
+    .container {
       margin-top: 70%; } }
-  .contacto li {
-    list-style: none; }
 
 .imgcontacto {
+  padding: 20px;
   width: 150px;
   height: 150px; }
   @media screen and (max-width: 705px) {
     .imgcontacto {
-      margin: 13px;
       width: 100px;
       height: 100px; } }
+
+.altura {
+  height: 60vh; }
 
 .pie {
   background-color: #757575; }
