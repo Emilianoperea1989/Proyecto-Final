@@ -51,7 +51,8 @@ $breakpoints: (
     color: black;
     text-align: center;
  @include mediaquery(sm){
-    margin-top: 70%;
+    padding-top: 30%;
+    margin-bottom: 70%;
     font-size: 45px;
     
     }
