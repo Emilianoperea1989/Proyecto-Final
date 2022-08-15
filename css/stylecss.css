@@ -120,7 +120,7 @@ header {
       font-size: 45px; } }
 
 .habilidades {
-  margin-top: 25%;
+  margin-top: 14%;
   padding: 15px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
