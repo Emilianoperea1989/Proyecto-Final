@@ -68,15 +68,16 @@ header {
 
 .lista-responsive {
   text-align: center;
-  margin-right: 12%;
-  list-style: none; }
+  margin-right: 12%; }
 
 .lista-hamburguesa {
   font-family: 'Cormorant SC', serif;
   font-size: 20px;
   color: white;
-  list-style: none;
   text-decoration: none; }
+
+.lista-general {
+  list-style: none; }
 
 .banner {
   word-wrap: break-word;
