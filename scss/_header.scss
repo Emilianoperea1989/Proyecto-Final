@@ -11,6 +11,9 @@ $breakpoints: (
     }
 }
 
+// Operaciones
+$padding-aritmetico:3px;
+
 
 header {
     position: absolute;
@@ -49,12 +52,16 @@ header {
             @include mediaquery(sm){
                 flex-direction: column;
                 align-items: center;
-                padding: 3px;
+                
                 }
             li {
                 list-style: none;
                 font-size: 30px;
-                padding: 6px;
+
+
+                // uso de operaciones
+                
+                padding:$padding-aritmetico+13px;
 
                 @include mediaquery(lg) {
 
@@ -98,7 +105,7 @@ header {
 
 
                 a {
-                    font-family: 'Cormorant SC', serif;
+                    font-family: $fuenteDeLetra;
                     text-decoration: none;
                     color: white;
                     margin: 8px;
@@ -132,7 +139,7 @@ display: none;
  list-style: none;
 }
 .lista-hamburguesa{
-    font-family: 'Cormorant SC', serif;
+    font-family: $fuenteDeLetra;
     font-size: 20px;
     color: white;
     text-decoration: none;

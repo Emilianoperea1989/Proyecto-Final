@@ -11,7 +11,8 @@ $breakpoints: (
 }
 
 
-.banner {
+// extend
+%banner{
     word-wrap: break-word;
     background-image: url(../img/img-fondo-banner.jpg);
     background-size: cover;
@@ -21,7 +22,11 @@ $breakpoints: (
     flex-direction: column;
     justify-content: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-  
+}
+
+.banner {
+
+   @extend %banner;
     p{
         margin-top: 10%;
         color: white;
@@ -45,7 +50,7 @@ $breakpoints: (
 }
 #my-name{
     margin: 12%;
-    font-family: 'Cormorant SC', serif;
+    font-family: $fuenteDeLetra;
     font-size: 120px;
     font-weight: 900;
     color: black;
