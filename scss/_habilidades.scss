@@ -13,7 +13,9 @@ $breakpoints: (
 
 
 .habilidades {
-    margin-top: 250px;
+    
+    margin-top: 25%;
+    padding: 15px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "img1 img2 img3"

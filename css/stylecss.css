@@ -66,6 +66,17 @@ header {
   .navegador {
     display: none; } }
 
+.lista-responsive {
+  text-align: center;
+  margin-right: 12%; }
+
+.lista-hamburguesa {
+  font-family: 'Cormorant SC', serif;
+  font-size: 20px;
+  color: white;
+  list-style: none;
+  text-decoration: none; }
+
 .banner {
   word-wrap: break-word;
   background-image: url(../img/img-fondo-banner.jpg);
@@ -90,7 +101,7 @@ header {
         font-size: 25px; } }
     @media screen and (max-width: 765px) {
       .banner p {
-        margin-top: 70%;
+        margin-top: 20%;
         font-size: 20px; } }
 
 #my-name {
@@ -102,11 +113,12 @@ header {
   text-align: center; }
   @media screen and (max-width: 765px) {
     #my-name {
-      margin-top: 100%;
-      font-size: 50px; } }
+      margin-top: 70%;
+      font-size: 45px; } }
 
 .habilidades {
-  margin-top: 250px;
+  margin-top: 25%;
+  padding: 15px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img6";
@@ -158,16 +170,11 @@ header {
 
 @media screen and (max-width: 1000px) {
   .sizeimg {
-    max-width: 300px;
-    padding-top: 20px; } }
+    max-width: 250px;
+    padding-bottom: 30px; } }
 
 .alineado {
-  margin-top: 15%;
-  height: 100vh; }
-  @media screen and (max-width: 765px) {
-    .alineado {
-      margin-top: 70%;
-      max-width: auto; } }
+  height: 90vh; }
 
 .container {
   margin-top: 20%;
